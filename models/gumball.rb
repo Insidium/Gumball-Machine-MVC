@@ -4,3 +4,7 @@ class GumballModel
         @total = 100
     end
 end
+
+# reduce total
+
+# refill machine

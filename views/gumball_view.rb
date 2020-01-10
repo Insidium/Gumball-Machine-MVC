@@ -12,4 +12,15 @@ class GumballView
         puts "There are #{total} gumballs left!"
     end
 
+    def want_gumballs()
+        puts "Do you want some gumballs?"
+        answer = gets.chomp
+        return answer
+    end
+
+    def take_gumballs(taken)
+        puts "You have received #{taken} gumballs. Enjoy!"
+        display_total(total)
+    end
+
 end

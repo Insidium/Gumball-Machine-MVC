@@ -6,8 +6,8 @@
 #     #keep track of number of gumballs -- DONE
 #     #inform user of result  -- DONE
 #     #check if gumballs are available -- DONE
-#     prompt for user input
-#     process user input
+#     prompt for user input -- DONE
+#     process user input -- DONE
 #     provide gumballs
 #     accept gumball refills
 
