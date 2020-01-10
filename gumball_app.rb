@@ -5,7 +5,7 @@
 #     #** GUMBALL MACHINE **
 #     #keep track of number of gumballs -- DONE
 #     #inform user of result  -- DONE
-#     #check if gumballs are available 
+#     #check if gumballs are available -- DONE
 #     prompt for user input
 #     process user input
 #     provide gumballs

@@ -5,10 +5,11 @@ class GumballView
     end
 
     def no_gumballs()
-        puts "There are no gumballs left!"
+        puts "There are NO gumballs left!"
     end
 
-    def some_gumballs()
+    def some_gumballs(total)
         puts "There are #{total} gumballs left!"
     end
+
 end
