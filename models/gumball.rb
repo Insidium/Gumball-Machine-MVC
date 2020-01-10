@@ -1,5 +1,5 @@
 class GumballModel
-    attr_reader :total
+    attr_accessor :total
     def initialize
         @total = 100
     end
