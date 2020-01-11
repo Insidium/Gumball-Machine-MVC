@@ -16,18 +16,18 @@ class GumballController
         
         answer = @gumball_view.want_gumballs()
 
-        if @gumball_view.want_gumballs() == "y"
-            @gumball_view.take_gumballs()
+        if answer == "y"
+            puts "Thank you..."
         else
-            puts "PEW PEW"
+            puts "Ok, see you next time!"
         end
 
-        taken = @gumball_view.take_gumballs()
+        taken = @gumball_view.take_gumballs(taken)
 
-        if @gumball_view.take_gumballs(taken) == 0
-            @gumball_view.want_gumballs(answer)
+        if taken == 0
+            @gumball_view.want_gumballs(taken)
         else
-            @gumball_model.total - @gumball_view.take_gumballs(taken)
+            @gumball_model.total - @gumball_view.take_gumballs(taken).to_i
             @gumball_view.display_total(@gumball_model.total)
         end
 
