@@ -3,8 +3,11 @@ class GumballModel
     def initialize
         @total = 100
     end
+
+    # reduce total
+
+    # refill machine
+
 end
 
-# reduce total
 
-# refill machine

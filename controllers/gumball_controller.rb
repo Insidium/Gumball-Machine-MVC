@@ -15,16 +15,22 @@ class GumballController
         end
         
         answer = @gumball_view.want_gumballs()
-    end
 
-    def purchase
+        if @gumball_view.want_gumballs() == "y"
+            @gumball_view.take_gumballs()
+        else
+            puts "PEW PEW"
+        end
+
+        taken = @gumball_view.take_gumballs()
+
         if @gumball_view.take_gumballs(taken) == 0
             @gumball_view.want_gumballs(answer)
         else
             @gumball_model.total - @gumball_view.take_gumballs(taken)
             @gumball_view.display_total(@gumball_model.total)
         end
-    end
 
+    end
 
 end
